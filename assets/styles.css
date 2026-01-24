@@ -45,35 +45,43 @@ header {
 }
 .botao0 {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 .botao1 {
      background-color: white;
     color: black;
     border-radius: 100px;
     max-width: 100%;
-    padding: 1rem 7rem 1rem 7rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    text-align: wrap;
-
+    border-left:7rem solid white;
+    border-right: 7rem solid white;
+    border-bottom: 0.8rem solid white;
+    border-top: 0.8rem solid white;
+    margin-bottom: 1rem;
 }
 .botao2 {
-     background-color: black;
+    background-color: black;
     color: white;
     border-radius: 100px;
-    padding: 1rem 5.5rem 1rem 5.5rem;
+    border-left:5.8rem solid black;
+    border-right: 5.8rem solid black;
+    border-bottom: 0.9rem solid black;
+    border-top: 0.9rem solid black;
     max-width: 100%;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30;
 }
 header h1{
+    font-weight: lighter;
+    letter-spacing: 1px;
     color: white;
-    width: 30%;
-    font-size: 1.3rem;
+    width: 40%;
+    font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
