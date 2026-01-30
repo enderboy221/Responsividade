@@ -37,11 +37,14 @@ header {
     background-image: url(/assets/img/IMG_PAPELPAREDE.png);
     background-repeat: no-repeat;
     background-position:bottom;
-    max-width: 100%;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left;
+}
+main{
+ width: 100%;
 }
 .botao0 {
     display: flex;
@@ -53,7 +56,7 @@ header {
     margin-bottom: 3rem;
 }
 .botao1 {
-     background-color: white;
+    background-color: white;
     color: black;
     border-radius: 100px;
     max-width: 100%;
@@ -91,7 +94,7 @@ header p{
     color: white;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    max-width: 100%;
+    max-width: 757px;
 }
 .block {
     max-width: 100%;
@@ -114,26 +117,32 @@ header p{
     line-height: 1.3rem;
     max-width:378px;
 }
-.block h2,h1,p,img {
+.block h2,p,img {
     margin:10px;
     display: inline-block;
 }
 .bot0 p,h2{
     float:right;
 }
+.bot0 {
+    width: 100%;
+}
 .bot1 {
     background-color: #F6F6F6;
     flex-direction: row-reverse;
+    width: 100%;
 }
 .bot3 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     background-color: #F6F6F6;
+    width: 100%;
 }
-.bot3 h2{
-    display: flex;
-    order: 2;
+.bot3 h1{
+    max-width: 608px;
+    font-weight: lighter;
+    font-size: 2.5rem;
 }
 .bot3 p{
     max-width: 802px;
@@ -159,3 +168,28 @@ svg{
     display: flex;
     flex-direction: column;
 }
+@media screen and (min-width:776px) {
+    header {
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+    }
+    .botao1 {
+        margin-bottom: 0px;
+        margin-right:10px;
+        border-left:20px solid white;
+        border-right: 20px solid white; 
+     }
+     .block h2 {
+        max-width: 329px;
+     }
+     .block p {
+        max-width: 348px;
+     }
+     .bot3 p {
+        max-width: 802px;
+     }
+     .bot3 {
+        text-align: center;
+     }
+    }
